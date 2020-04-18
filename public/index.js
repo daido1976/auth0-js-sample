@@ -25,6 +25,12 @@ const login = async () => {
   });
 };
 
+const logout = () => {
+  auth0.logout({
+    returnTo: window.location.origin,
+  });
+};
+
 window.onload = async () => {
   await configureClient();
   updateUI();
