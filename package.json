@@ -19,5 +19,8 @@
   "homepage": "https://github.com/daido1976/auth0-js-sample#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
