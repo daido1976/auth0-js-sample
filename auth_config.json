@@ -1,4 +1,5 @@
 {
   "domain": "auth0-samples.auth0.com",
-  "clientId": "suZSMfGgK2wWtivgkIiYWGuywEJJEtHK"
+  "clientId": "suZSMfGgK2wWtivgkIiYWGuywEJJEtHK",
+  "audience": "http://localhost:3000/"
 }
