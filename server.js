@@ -5,6 +5,7 @@ const jwksRsa = require("jwks-rsa");
 const authConfig = require("./auth_config.json");
 
 const app = express();
+
 // Validate Json Web Token
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
