@@ -5,6 +5,7 @@ const jwksRsa = require("jwks-rsa");
 const authConfig = require("./auth_config.json");
 
 const app = express();
+// Validate Json Web Token
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
     cache: true,
@@ -32,6 +33,7 @@ app.get("/auth_config.json", (req, res) => {
 });
 
 // API only authenticated users can call
+// Note: 第二引数の checkJwt が先に実行される
 app.get("/api/external", checkJwt, (req, res) => {
   res.send({ msg: "Yeah! Your access token was successfully validated!" });
 });
