@@ -6,7 +6,7 @@ const authConfig = require("./auth_config.json");
 
 const app = express();
 
-// Validate Json Web Token
+// Validate JSON Web Token
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
     cache: true,
